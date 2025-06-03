@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClockMe</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="home-btn" id="home-btn">ClockMe</div>
+            <div class="mode-selector">
+                <div class="mode-btn active" id="timer-btn">Timer</div>
+                <div class="mode-btn" id="stopwatch-btn">Stopwatch</div>
+            </div>
+        </div>
+
+        <div class="timer-section active" id="timer-section">
+            <h1>Digital Timer</h1>
+            <div class="timer-display" id="timer-display">00 : 00 : 00</div>
+
+            <div class="time-selectors">
+                <select id="hours-select"></select>
+
+                <select id="minutes-select"></select>
+
+                <select id="seconds-select"></select>
+            </div>
+
+            <select id="preset-select">
+                <option value="">Select Preset Time</option>
+                <option value="300">5 Minutes</option>
+                <option value="600">10 Minutes</option>
+                <option value="900">15 Minutes</option>
+                <option value="1800">30 Minutes</option>
+                <option value="3600">1 Hour</option>
+            </select>
+
+            <div class="controls">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn" disabled>Pause</button>
+                <button id="reset-btn" disabled>Reset</button>
+            </div>
+        </div>
+
+        <div class="stopwatch-section" id="stopwatch-section">
+            <h1>Stopwatch</h1>
+            <div class="timer-display" id="stopwatch-display">00 : 00 : 00</div>
+            <div class="controls">
+                <button id="sw-start-btn">Start</button>
+                <button id="sw-pause-btn" disabled>Pause</button>
+                <button id="sw-reset-btn" disabled>Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
